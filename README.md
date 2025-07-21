@@ -14,16 +14,16 @@ openpyxl 3.1.5
 cutadapt 3.1 --> https://cutadapt.readthedocs.io/en/stable/
 
 Usage:  
-fastq_rm_adapter_batch.py
-for Read1 (18bp)
-python fastq_rm_adapter_batch.py -i U6DDR_fastq/ -a GTACCGGGCCCGCTCTAGA...TTAATTAAGCAAACCTGGACAAGATGCTGG
-for Read2 (20bp)
-python fastq_rm_adapter_batch.py -i U6DDR_fastq/ -a TCCAGCTTAGCTCTTAAAC...CCAACAAGGTGGTTCTCCA
-(folder for fastq files, using cutadapt -g ADAPTER1...ADAPTER2 to remove seq before and after barcode)
+fastq_rm_adapter_batch.py  
+for Read1 (18bp)  
+python fastq_rm_adapter_batch.py -i U6DDR_fastq/ -a GTACCGGGCCCGCTCTAGA...TTAATTAAGCAAACCTGGACAAGATGCTGG  
+for Read2 (20bp)  
+python fastq_rm_adapter_batch.py -i U6DDR_fastq/ -a TCCAGCTTAGCTCTTAAAC...CCAACAAGGTGGTTCTCCA  
+(folder for fastq files, using cutadapt -g ADAPTER1...ADAPTER2 to remove seq before and after barcode)  
 requires cutadapt
 
-fastq2csv_batch.py
-python fastq2csv_batch.py -i U6DDR_fastq/
+fastq2csv_batch.py  
+python fastq2csv_batch.py -i U6DDR_fastq/  
 requires: fastq_preprocess.py
 
 template_switch_quantify.py
